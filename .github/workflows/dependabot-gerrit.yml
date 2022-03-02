@@ -10,7 +10,7 @@ jobs:
     if: github.actor == 'dependabot[bot]'
     steps:
       - name: Checkout HEAD commit
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           # Depth of 3 at least, so we have the needed commit, a clean parent commit, and the rest of the code in a third
